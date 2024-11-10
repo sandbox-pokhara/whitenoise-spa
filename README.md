@@ -24,12 +24,8 @@ pip install whitenoise-spa
 2. Configure SPA root and urls.
    ```python
    WHITENOISE_SPA_ROOT = BASE_DIR / "dist"
-   WHITENOISE_SPA_URLS = ["/", "/login/", "/settings/"]
+   WHITENOISE_SPA_URL_PATTERN = "/|/login/|/settings/"
    ```
-
-## Limitations
-
-- Does not support wildcard urls for SPA urls.
 
 ## License
 
